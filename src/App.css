@@ -1,0 +1,9 @@
+/* Global reset */
+body, html {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #000;
+  font-family: Arial, sans-serif;
+}

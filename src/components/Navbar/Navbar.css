@@ -1,0 +1,66 @@
+/* Fixed navbar at the top */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 1000;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    padding-left: 0px;
+    padding-right: 1000px;
+    
+   
+  }
+  
+  /* Logo on the left */
+  .navbar-logo {
+    font-weight: bold;
+    font-size: 20px;
+    color: #000;
+    margin-left: 40px;
+  }
+  
+  /* Nav links on the right */
+  .navbar-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+  }
+  
+  .navbar-links a:hover {
+    color: #000;
+  }
+  
+  /* Example Sign Up button style */
+  .navbar-btn {
+    background-color: #f9c70c;
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: #000;
+    margin-left: 20px;
+    margin-right: 40px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between logo and text */
+    font-size: 1.5rem; /* Adjust text size */
+    font-style: normal;
+    color: #333; /* Adjust text color */
+  }
+  
+  .navbar-logo {
+    width: 60px; /* Adjust size of logo */
+    height: 50px; /* Maintain aspect ratio */
+    margin-left: 15px; 
+  }
+  
