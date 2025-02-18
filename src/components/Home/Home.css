@@ -34,18 +34,24 @@
 /* Left Column */
 .hero-left {
   flex: 1;
-  margin-right: -50px;
+  margin-left: 1px;
+
 }
 
 .hero-left h1 {
   font-size: 3.5rem;
   margin-bottom: 16px;
+  margin-left: 10px;
+  text-align: left;
+  color: #0f0f0fd6;
 }
 
 .hero-left p {
   font-size: 1.1rem;
   line-height: 1.5;
   margin-bottom: 24px;
+  text-align: left;
+  margin-left: 15px;
 }
 
 .tutorial-btn {
@@ -55,6 +61,12 @@
   font-weight: bold;
   cursor: pointer;
   border-radius: 4px;
+  width: 200px;
+  margin-left: -400px;
+}
+.top-btn :hover{
+  background-color: #252424;
+
 }
 
 /* Right Column (Summit Card) */
@@ -62,7 +74,8 @@
   flex: 1;
   display: flex;
   justify-content: center;
-  margin-left: 300px;
+  margin-right: -80px;
+  
   
 }
 
@@ -85,14 +98,18 @@
   color: #333;
 }
 
-.summit-btn {
-  background-color: #f9c70c;
+.register-btn {
+  background-color: #252424;
   border: none;
   padding: 12px 24px;
   font-weight: bold;
   cursor: pointer;
   border-radius: 4px;
   margin-bottom: 20px;
+}
+.register-btn :hover{
+  background-color: #f9c70c;
+
 }
 
 
@@ -117,7 +134,7 @@
 }
 .logo {
   width: 300px;  /* Adjust the size as needed */
-  height: 250px;   /* Maintain aspect ratio */
+  height: 290px;   /* Maintain aspect ratio */
   display: block; /* Ensure proper alignment */
   margin: 10px auto; /* Center the logo */
 }

@@ -1,18 +1,20 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
+import Feature from "../Feature/Feature";
+import Footer from "../Footer/Footer";
 import "./Home.css";
 import logo from "../../assets/fed_net_logo.png";
 function Home() {
+  const navigate = useNavigate();
   return (
     <div className="home-container">
       {/* Fixed Navbar at the top */}
       <Navbar />
-
       {/* Optional top banner */}
       <div className="top-banner">
         Train your machine learning model using federatd learning.
       </div>
-
       {/* Hero Section */}
       <div className="hero">
         {/* Left column */}
@@ -34,15 +36,20 @@ function Home() {
         <div className="hero-right">
           <div className="summit-card">
             <img src={logo} alt="Flower AI Logo" className="summit-logo logo" />
-
             <p>A step towards making FL more efficient.</p>
-            <button className="summit-btn">Register now</button>
+            <button
+              className="register-btn"
+              onClick={() => navigate("/register")}
+            >
+              Register now
+            </button>
           </div>
         </div>
       </div>
-
       {/* Fixed Star on GitHub button in the center */}
       <button className="star-button">Get Started</button>
+      <Feature />
+      <Footer />
     </div>
   );
 }
